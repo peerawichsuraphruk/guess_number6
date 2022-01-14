@@ -3,15 +3,16 @@
 import 'dart:math';
 
 class Game {
+  var max = 100;
   int? _answer;
   int _guessCount = 0;
   static var playList = <int>[];
   var sum = 0;
 
   //Random
-  Game({maxRandom = 100}) {
+  Game() {
     var r = Random();
-    _answer = r.nextInt(maxRandom) + 1;
+    _answer = r.nextInt(max) + 1;
   }
 
   //GuessCount

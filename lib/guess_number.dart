@@ -27,7 +27,7 @@ void playGame() {
   var input = stdin.readLineSync();
   var max = int.tryParse(input!);
   max ??= 100;
-  var game = Game(maxRandom: max);
+  var game = Game();
   var isCorrect = false;
 
   print('╔════════════════════════════════════════');
